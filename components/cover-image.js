@@ -1,11 +1,14 @@
 import cn from 'classnames';
 import Link from 'next/link';
-import Imgix from 'react-imgix';
+import Image from 'next/image';
+// import Imgix from 'react-imgix';
 
 export default function CoverImage({ title, url, slug }) {
   const image = (
-    <Imgix
+    <Image
       src={url}
+      width="1024"
+      height="800"
       alt={`Cover Image for ${title}`}
       className={cn('lazyload shadow-small w-full', {
         'hover:shadow-medium transition-shadow duration-200': slug,
