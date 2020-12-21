@@ -7,7 +7,7 @@ export default function CoverImage({ title, url, slug }) {
     <Imgix
       src={url}
       alt={`Cover Image for ${title}`}
-      className={cn('lazyload shadow-small w-3/4', {
+      className={cn('lazyload shadow-small w-full', {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
       sizes="50vw"

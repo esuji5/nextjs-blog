@@ -1,7 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    color: #222
+}
 a {
     color: orange;
     text-decoration: auto;
+}
+h1, h2, h3{
+    font-family: 'Varela Round','Kosugi', 'Kosugi Maru', sans-serif;
+}
+.title_text {
+    color: #333
 }

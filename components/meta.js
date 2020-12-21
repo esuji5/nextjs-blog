@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '@/lib/constants'
+import Head from 'next/head';
+import { DESCRIPTION, HOME_OG_IMAGE_URL } from '@/lib/constants';
 
 export default function Meta() {
   return (
@@ -34,9 +34,11 @@ export default function Meta() {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
+        content={ DESCRIPTION }
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <link rel="preconnect" href="https://fonts.gstatic.com"/>
+      <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Kosugi&family=Kosugi+Maru&display=swap" rel="stylesheet"></link>
     </Head>
-  )
+  );
 }
