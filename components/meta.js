@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { DESCRIPTION, HOME_OG_IMAGE_URL } from '@/lib/constants';
+import { BLOG_TITLE, BLOG_URL, DESCRIPTION, HOME_OG_IMAGE_URL } from '@/lib/constants';
 
 export default function Meta() {
   return (
@@ -36,7 +36,16 @@ export default function Meta() {
         name="description"
         content={ DESCRIPTION }
       />
+      <meta property="og:title" content="blog top" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={ BLOG_URL } />
+      <meta property="og:site_name" content={ BLOG_TITLE } />
+      <meta property="og:description" content={ DESCRIPTION } />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      {/* <meta name="twitter:card" content="photo" /> */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@esuji" />
+      <meta name="twitter:player" content="@esuji" />
       <link rel="preconnect" href="https://fonts.gstatic.com"/>
       <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Kosugi&family=Kosugi+Maru&display=swap" rel="stylesheet"></link>
     </Head>

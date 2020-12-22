@@ -10,7 +10,8 @@ import Layout from '@/components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '@/lib/api'
 import PostTitle from '@/components/post-title'
 import Head from 'next/head'
-import { BLOG_TITLE } from '@/lib/constants'
+import { BLOG_TITLE, BLOG_URL
+ } from '@/lib/constants'
 import markdownToHtml from '@/lib/markdownToHtml'
 
 export default function Post({ post, morePosts, preview }) {
@@ -31,6 +32,8 @@ export default function Post({ post, morePosts, preview }) {
                 <title>
                   {post.title} | { BLOG_TITLE }
                 </title>
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content={ `${BLOG_URL}/posts/${post.slug}` } />
                 <meta
                   property="og:image"
                   content={post.metadata.cover_image.imgix_url}
