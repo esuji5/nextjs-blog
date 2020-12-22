@@ -31,7 +31,8 @@ export default function Post({ post, morePosts, preview }) {
               <Head>
                 <title>{post.title} | { BLOG_TITLE }</title>
                 <meta property="og:type" content="article" />
-                <meta property="og:title" content={ BLOG_TITLE } />
+                <meta property="og:title" content={post.title} />
+                <meta property="og:description" content={post.metadata.excerpt} />
                 <meta property="og:url" content={ `${BLOG_URL}/posts/${post.slug}` } />
                 <meta property="og:image" content={post.metadata.cover_image.imgix_url}/>
               </Head>
