@@ -36,7 +36,7 @@ export default function Meta() {
         name="description"
         content={ DESCRIPTION }
       />
-      <meta property="og:title" content="blog top" />
+      <meta property="og:title" content={ BLOG_TITLE } />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={ BLOG_URL } />
       <meta property="og:site_name" content={ BLOG_TITLE } />
