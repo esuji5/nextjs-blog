@@ -36,13 +36,13 @@ export default function Meta() {
         name="description"
         content={ DESCRIPTION }
       />
-      <meta property="og:title" content={ BLOG_TITLE } />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={ BLOG_URL } />
-      <meta property="og:site_name" content={ BLOG_TITLE } />
-      <meta property="og:description" content={ DESCRIPTION } />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
-      {/* <meta name="twitter:card" content="photo" /> */}
+      <meta property="og:title" content={ BLOG_TITLE } key="og:title" />
+      <meta property="og:type" content="website" key="og:type" />
+      <meta property="og:url" content={ BLOG_URL } key="og:url" />
+      <meta property="og:site_name" content={ BLOG_TITLE } key="og:site_name" />
+      <meta property="og:description" content={ DESCRIPTION } key="og:description" />
+      <meta property="og:image" content={HOME_OG_IMAGE_URL} key="og:image" />
+      {/* <meta name="twitter:card" content="photo" key= /> "twitter:*/}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@esuji" />
       <meta name="twitter:player" content="@esuji" />
