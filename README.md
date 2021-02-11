@@ -1,3 +1,9 @@
+
+this repo is based on [Build and Deploy a Next.js Blog with Cosmic and Vercel](https://vercel.com/guides/deploying-next-and-cosmic-with-vercel)
+
+my blog here https://esuji5.vercel.app/
+
+
 # A statically generated blog example using Next.js and Cosmic
 
 This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using [Cosmic](https://cosmicjs.com/) as the data source.
